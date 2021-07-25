@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Indumentaria A&A</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- keywords -->
+    <meta name="description" content="Lo mejor en ropa y accesorios: Vestidos, Camperas, Camisas, Bufandas y más. Encontrá tu Local más cercano o comprá online. Envíos gratis a todo el país.">
+    <meta name="keywords" content="Indumentaria, Moda, Colecciones, Ropa, A&A">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/logos/camisa.png" type="image/x-icon">
+    <!-- GoogleFont -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--encabezado-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logoPagina" href="index.html"><img src="img/logos/camiseta.png" alt="logo">Indumentaria A&A</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Colecciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/priver.html">Primavera-Verano</a></li>
+                                <li><a class="dropdown-item" href="pages/otoinv.html">Otoño-Invierno</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="pages/accesorios.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sucursales
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/sucursales/caba.html">Capital Federal</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="pages/sucursales/zonaoeste.html">Zona Oeste</a></li>
+                                <li><a class="dropdown-item" href="pages/sucursales/zonasur.html">Zona Sur</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Proximamente</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--informacion importante-->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" id="imagenesCarousel">
+                <div class="carousel-item active">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/31/17/52/suit-869380_960_720.jpg" class="d-block w-100" alt="traje1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/16/15/01/fashion-601553_960_720.jpg" class="d-block w-100" alt="traje2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/01/05/45/stylish-916502_960_720.jpg" class="d-block w-100" alt="traje3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    <!--Colecciones-->
+        <h1 class="tituloPrincipal">Indumentaria A&A</h1>
+        <section id="colecciones" class="row">
+            <div class="col">
+                <h2>Colecciones</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="pages/priver.html">Primavera/Verano</a>
+                    <p>Esta Coleccion Primavera-Verano 2022 viene con muchas novedades y un amplio catalogo de opciones para lucir en la temporadas mas calidas del calendario de la moda.</p>
+                </div>
+                <div class="col-sm-12 col-md-6" >
+                    <iframe width="360" height="230" src="https://www.youtube.com/embed/HIjz7JHkvH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="pages/otoinv.html">Otoño/Invierno</a>
+                    <p>En la Coleccion Otoño-Invierno 2022 no te pierdas las ultimas novedades para no perder el estilo a la hora de abrigarte y estar a la moda, no te pierdas las mejores ofertas.</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <iframe width="360" height="230" src="https://www.youtube.com/embed/RxDJwA7gdoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Articulo de accesorios-->
+        <section  class="accesorios" class="row">
+            <div class="col">
+                <h2>Accesorios</h2>
+                <a href="pages/accesorios.html">Nuestros Accesorios</a>
+                <p>Accesorios de todo tipo: Gorros, gafas, collares, etc...</p>
+            </div>
+        </section>
+        <section id="accesoriosImagenes" class="row">
+            <div class="col-sm-6 col-lg-3">
+                <img src="https://static2.abc.es/media/summum/2017/11/21/23823470_1934459676880595_8711495906077179904_n-k95D-U212125748681BWC-350x533@abc.jpg" alt="Guantes">
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <img src="https://cdn.shopify.com/s/files/1/0024/7142/8185/products/Lo-m-s-nuevo-70-cm-200-cm-bufandas-de-moda-para-hombre-bufandas-de-Cachemira.jpg?v=1576649399" alt="Bufandas">
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_826876-MLA43317551100_082020-O.jpg" alt="Lentes">
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <img src="https://i.pinimg.com/originals/3c/81/d8/3c81d8d6e3f63af54e724fa557f5869d.jpg" alt="Billeteras">
+            </div>
+        </section>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <!--Tabla de talles-->
+                <table border="1" cellpadding="10" id="tablaDeTalles">
+                <Caption>Talles de remera regular</Caption>
+                    <thead>
+                        <th>Talles</th>
+                        <th>Alto(cm)</th>
+                        <th>Ancho(cm)</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S</td>
+                            <td>64</td>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>66</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>70</td>
+                            <td>54</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>72</td>
+                            <td>58</td>
+                        </tr>
+                        <tr>
+                            <td>XXL</td>
+                            <td>75</td>
+                            <td>62</td>
+                        </tr>
+                    </tbody>   
+                </table>
+            </div>
+            <!-- Medios de pago -->
+            <div class="col-sm-12 col-md-6">
+                <section id="mediosDePago">
+                    <h3>Medios de Pago:</h3>
+                    <div>
+                        <img src="https://image.flaticon.com/icons/png/512/179/179457.png" alt="Visa">
+                    </div>
+                    <div>
+                        <img src="https://logodownload.org/wp-content/uploads/2014/07/mastercard-logo-7.png" alt="Master">
+                    </div>
+                    <div>
+                        <img src="https://image.flaticon.com/icons/png/512/179/179431.png" alt="Amex">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Formulario -->
+        <div class="row">
+            <div class="col-sm-0 col-lg-2">
+            </div>
+            <form action="php" method="GET" id="formularioDeContacto" class="col-sm-12 col-lg-8">
+                <fieldset>
+                    <legend>Informacion Personal</legend>
+                    <div>Sexo:
+                        <label for="Mujer">Mujer</label>
+                        <input type="radio" name="Mujer">
+                        <label for="Hombre">Hombre</label>
+                        <input type="radio" name="Hombre">
+                    </div>
+                    <div>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div>    
+                        <label for="Apellido">Apellido:</label>
+                        <input type="text" name="apellido">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Escriba su mail aqui">
+                    </div>
+                    <div>
+                        <label for="Talle"></label>
+                        <select name="Talle" id="Talle">
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="ExtraLarge">Extra-Large</option>
+                            <option value="XXL">XXLarge</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea name="Contanos mas de vos" id="extencion" cols="30" rows="10" placeholder="Escribe aqui tu consulta"></textarea>
+                    </div>
+                    <div>
+                        <label for="checkbox">Deseo recibir promociones por correo</label>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                    </div>
+                    <div>
+                        <label for="submit"></label>
+                        <input type="submit" name="submit">
+                    </div>    
+                </fieldset>
+            </form>
+            <div class="col-sm-0 col-lg-2">
+            </div>
+        </div>
+    </div>
+    <!--Pie de pagina-->
+    <footer class="pieDePagina">
+        <span>
+            <a href="pages/trabajo.html">Trabaja con nosotros</a>
+            <a href="pages/redes.html">Nuestras redes</a>
+            <a href="index.html">Pagina principal</a>
+        </span>
+    </footer>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

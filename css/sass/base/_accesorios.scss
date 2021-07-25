@@ -1,0 +1,76 @@
+/* Accesorios */
+
+.accesorios{
+    text-align: center;
+    h2{
+        color: $gris;
+        font-style: italic;
+        font-size: 2em;
+    }
+    p{
+        color: $gris;
+        font-style: italic;
+        font-weight: bold;
+    }
+    a{
+        color: $negro;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+}
+
+/* imagenes de accesorios */
+
+#accesoriosImagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    div{
+        img{
+            width: 5em;
+            height: 7em;
+        }
+    }
+}
+
+#accesoriosImagenes div img:hover{
+    width: 15rem;
+    height: 19rem;
+    transition: 2s;
+}
+
+/* Grilla Accesorios */
+
+.imgAccesorio{
+    display: flex;
+    border: $negro 1px solid;
+    margin: 10px;
+    background-color: $blanco;
+    color: $negro;
+    img{
+        width: 10em;
+        height: 12em;
+    }
+    div{
+        h5{
+            font: bold;
+            margin: 2px;
+        }
+        p{
+            font-style: italic;
+        }
+        button{
+            background-color: $azul;
+            color: $blanco;
+        }
+    }
+}
+
+
+$accesorio: lentes;
+@each $accesorio in lentes, billetera, rinonera, tapaboca {
+    .#{$accesorio}-img{
+        width: $ancho*3;
+        height: $alto/2;
+    }
+}

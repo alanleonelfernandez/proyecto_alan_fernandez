@@ -1,0 +1,205 @@
+@import "base/colores";
+@import "base/medidas";
+@import "base/colecciones";
+@import "base/accesorios";
+@import "base/responsive";
+
+/* logo pagina */
+
+.logoPagina{
+    display: inline;
+    img{
+        width: 50px;
+        height: 50px;
+        margin: 20px 20px 20px 20px;
+    }
+}
+
+/* Titulos */
+
+.tituloPrincipal{
+    color:rgb(0, 0, 0);
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.tituloPrincipal:hover{
+    transform: scale(1.5,1.5);
+    transition: 2s;
+}
+
+/* Carousel */
+
+
+/* Fondo */
+
+body{
+    background: rgb(186,186,186);
+    background: -moz-radial-gradient(circle, rgba(186,186,186,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(186,186,186,1) 0%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(186,186,186,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bababa",endColorstr="#ffffff",GradientType=1);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+/* Productos */
+
+#products{
+    display: flex;
+    justify-content: center;
+    h1{
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+.producto{
+    display: flex;
+    border: $negro 1px solid;
+    margin: 10px;
+    background-color: $blanco;
+    .producto__imagen{
+        width: 10em;
+        height: 15em;
+    }
+    .producto__descripcion{
+        color: $negro;
+        .producto__titulo{
+            font: bold;
+            margin: 2px;
+        }
+        .producto__detalle{
+            font-style: italic;
+        }
+        .producto--boton{
+            background-color: $azul;
+            color: $blanco;
+        }
+    }
+}
+
+
+/* Medios de pago */
+
+#mediosDePago div img{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: $alto/8;
+    margin: 10px;
+}
+
+#mediosDePago div img:hover{
+    transform: translateX(30px);
+    transition: 2s;
+}
+
+/* Tabla de Talles */
+
+#tablaDeTalles{
+    border: $gris solid 1px;
+    text-align: center;
+    margin: 30px;
+}
+
+#tablaDeTalles caption, thead, tbody{
+    color: $negro;
+    border: solid 1px;
+    font: bold;
+    background-color: $blanco;
+}
+
+/* Formulario */
+
+#formularioDeContacto{
+    background-color: #ccc;
+    font-style: normal;
+}
+/* Pie de pagina */
+
+.pieDePagina{
+    font-size: 1.2em;
+    background-color: $gris;
+    text-align: center;
+    word-spacing: 3px;
+    margin-top: 20px;
+    height: 5em;
+}
+
+.pieDePagina a{
+    color: white;
+    padding: 20px;
+}
+
+/* Grilla Sucursales */
+
+.gridSucursales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.itemSucursal {
+    background: $blanco;
+    text-align: center;
+    border: $negro 3px solid;
+    width: $ancho*8;
+    height: $alto/3;
+    padding-top: 40px;
+    $estacion: invierno;
+    @if $estacion == invierno {
+        color: $azulOscuro;
+    } 
+    @else if $estacion == primavera {
+        color: $verde;
+    } 
+    @else if $estacion == verano {
+        color: $naranja;
+    }
+    @else if $estacion == otoño {
+        color: $gris;
+    } 
+    @else {
+        color: $negro;
+    }
+}
+
+/* Trabaja con Nosotros */
+
+.enviaTuCV{
+    img{
+    width: 100%;
+    height: auto;
+    }
+}
+
+#formularioCV div{
+    padding: 5px;
+}
+
+/* Nuestras Redes */
+
+.redesSociales{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.redesSociales:hover{
+    transform:scale(1.5,1.5);
+    transition: 2s;
+}
+
+/* Bucle Contacto */
+
+@for $i from 1 through 3 {
+    .tamaño#{$i}{
+        font-size: $i * 2em;
+    }
+}
