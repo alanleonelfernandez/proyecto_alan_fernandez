@@ -85,12 +85,22 @@ body{
 
 /* Medios de pago */
 
-#mediosDePago div img{
-    display: flex;
-    flex-direction: column;
-    width: 60px;
-    height: $alto/8;
+#mediosDePago{
     margin: 10px;
+    h3{
+        text-align: center;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img{
+            flex-direction: row;
+            width: 60px;
+            height: $alto/8;
+            margin: 10px;
+        }
+    }
 }
 
 #mediosDePago div img:hover{
@@ -101,17 +111,24 @@ body{
 /* Tabla de Talles */
 
 #tablaDeTalles{
-    border: $gris solid 1px;
     text-align: center;
-    margin: 30px;
+    caption{
+        text-align: center;
+    }
+    border: $gris solid 1px;
+    margin: 20px;
+    background-color: $blanco;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #tablaDeTalles caption, thead, tbody{
     color: $negro;
-    border: solid 1px;
+    border: 1px solid $negro;
     font: bold;
     background-color: $blanco;
 }
+
 
 /* Formulario */
 
@@ -127,7 +144,6 @@ body{
     text-align: center;
     word-spacing: 3px;
     margin-top: 20px;
-    height: 5em;
 }
 
 .pieDePagina a{

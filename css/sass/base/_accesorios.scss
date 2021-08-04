@@ -24,11 +24,14 @@
 #accesoriosImagenes{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+    margin-left: 20px;
     div{
         img{
             width: 5em;
             height: 7em;
+            margin: 10px;
         }
     }
 }
