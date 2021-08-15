@@ -1,7 +1,16 @@
 /* Responsive */
 /* Mobile */
 @media only screen and (max-width: 414px){
-
+    
+.tamano1{
+    font-size: 40px;
+}
+.tamano2{
+    font-size: 20px;
+}
+.tamano3{
+    font-size: 30px;
+}
 }
 
 /* Tablet */
@@ -30,4 +39,9 @@
 .tituloPrincipal{
     font-size: 3em;
 }
+
+.img-fluid{
+    width: 100%;
+}
+
 }

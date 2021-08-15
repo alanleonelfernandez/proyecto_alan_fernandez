@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Colecciones */
 #colecciones {
   text-align: center;
@@ -127,6 +126,18 @@
 
 /* Responsive */
 /* Mobile */
+@media only screen and (max-width: 414px) {
+  .tamano1 {
+    font-size: 40px;
+  }
+  .tamano2 {
+    font-size: 20px;
+  }
+  .tamano3 {
+    font-size: 30px;
+  }
+}
+
 /* Tablet */
 @media only screen and (min-width: 415px) and (max-width: 768px) {
   #accesoriosImagenes div {
@@ -148,6 +159,9 @@
   }
   .tituloPrincipal {
     font-size: 3em;
+  }
+  .img-fluid {
+    width: 100%;
   }
 }
 
@@ -185,15 +199,15 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
-/* Productos */
+/* Productos de colecciones */
 #products {
   display: flex;
   justify-content: center;
 }
 
-#products h1 {
+#products h1, #products h2 {
   text-align: center;
-  margin: 10px;
+  padding: 10px;
 }
 
 .producto {
@@ -295,22 +309,24 @@ body {
 }
 
 /* Grilla Sucursales */
-.gridSucursales {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 20px;
+.tituloSucursales {
+  text-align: center;
 }
 
-.itemSucursal {
-  background: #fff;
+.gridSucursales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.gridSucursales .itemSucursal {
   text-align: center;
-  border: #000 3px solid;
   width: 400px;
-  height: 133.33333px;
-  padding-top: 40px;
+  height: 200px;
   color: #00003c;
 }
 
@@ -320,8 +336,11 @@ body {
   height: auto;
 }
 
-#formularioCV div {
+#formularioCV {
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Nuestras Redes */
@@ -336,16 +355,23 @@ body {
   transition: 2s;
 }
 
-/* Bucle Contacto */
-.tamaño1 {
-  font-size: 2em;
+/* Bucle y Contacto */
+.tamano1 {
+  font-size: 0.6rem;
 }
 
-.tamaño2 {
-  font-size: 4em;
+.tamano2 {
+  font-size: 1.2rem;
 }
 
-.tamaño3 {
-  font-size: 6em;
+.tamano3 {
+  font-size: 1.8rem;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 /*# sourceMappingURL=estilos.css.map */

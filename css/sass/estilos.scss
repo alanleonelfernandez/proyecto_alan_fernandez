@@ -46,14 +46,14 @@ body{
 
 
 
-/* Productos */
+/* Productos de colecciones */
 
 #products{
     display: flex;
     justify-content: center;
-    h1{
+    h1, h2{
         text-align: center;
-        margin: 10px;
+        padding: 10px;
     }
 }
 
@@ -144,48 +144,50 @@ body{
     text-align: center;
     word-spacing: 3px;
     margin-top: 20px;
-}
-
-.pieDePagina a{
-    color: white;
-    padding: 20px;
+    a{
+        color: white;
+        padding: 20px;
+    }
 }
 
 /* Grilla Sucursales */
 
-.gridSucursales {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 20px;
-    justify-items: center;
-    align-items: center;
-    margin-top: 20px;
+.tituloSucursales{
+    text-align: center;
 }
 
-.itemSucursal {
-    background: $blanco;
-    text-align: center;
-    border: $negro 3px solid;
-    width: $ancho*8;
-    height: $alto/3;
-    padding-top: 40px;
-    $estacion: invierno;
-    @if $estacion == invierno {
-        color: $azulOscuro;
-    } 
-    @else if $estacion == primavera {
-        color: $verde;
-    } 
-    @else if $estacion == verano {
-        color: $naranja;
-    }
-    @else if $estacion == otoño {
-        color: $gris;
-    } 
-    @else {
-        color: $negro;
+.gridSucursales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    .itemSucursal {
+        text-align: center;
+        width: $ancho*8;
+        height: $alto/2;
+        $estacion: invierno;
+        @if $estacion == invierno {
+            color: $azulOscuro;
+        } 
+        @else if $estacion == primavera {
+            color: $verde;
+        } 
+        @else if $estacion == verano {
+            color: $naranja;
+        }
+        @else if $estacion == otoño {
+            color: $gris;
+        } 
+        @else {
+            color: $negro;
+        }
     }
 }
+
+
 
 /* Trabaja con Nosotros */
 
@@ -196,8 +198,11 @@ body{
     }
 }
 
-#formularioCV div{
+#formularioCV{
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* Nuestras Redes */
@@ -212,10 +217,18 @@ body{
     transition: 2s;
 }
 
-/* Bucle Contacto */
+/* Bucle y Contacto */
 
 @for $i from 1 through 3 {
-    .tamaño#{$i}{
-        font-size: $i * 2em;
+    .tamano#{$i}{
+        font-size: $i * 0.6rem;
     }
+}
+
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
